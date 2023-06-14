@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CarritoService } from 'src/app/Services/carrito-service.service';
 
 @Component({
   selector: 'app-formulario-envio',
@@ -11,12 +12,9 @@ export class FormularioEnvioComponent implements OnInit {
 
   public formEnvios: FormGroup = new FormGroup({});
   
-  elementos: any[] = [
-    { img: './assets/icons/Aifon.jpeg', producto: 'Apple iPhone 14', precio: 1500000, cantidad: 5 },
-    { img: './assets/icons/RunRun.jpg', producto: 'Patineta eléctrica', precio: 3000000, cantidad: 3 },
-  ];
+  elementos: any[] = [];
 
-  constructor(private formBuilder: FormBuilder){
+  constructor(private formBuilder: FormBuilder, private carritoService: CarritoService){
 
   }
   
@@ -42,8 +40,13 @@ export class FormularioEnvioComponent implements OnInit {
         telefono: ['', Validators.required]
       })
     });
+
+    this.elementos = this.carritoService.getElementos();
     console.log(this.elementos);
   }
+
+  
+  
 
   getSubtotal(): number {
     let subtotal = 0;

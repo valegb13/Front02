@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { CarritoService } from 'src/app/Services/carrito-service.service';
 
 @Component({
   selector: 'app-validacion-carrito',
@@ -38,12 +39,18 @@ export class ValidacionCarritoComponent implements OnInit {
   cuponForm!: FormGroup;
   cupon: string = '';
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private carritoService: CarritoService) {}
 
   ngOnInit() {
     this.cuponForm = this.formBuilder.group({
       cupon: ['']
     });
+  }
+
+  send(): any {
+    const elementos = this.elementos;
+    this.carritoService.setElementos(elementos);
+    // Resto del código para enviar los datos al formulario o realizar otras acciones.
   }
 
   eliminarElemento(elemento: any) {

@@ -20,6 +20,9 @@ import { FormularioEnvioComponent } from './Pages/formulario-envio/formulario-en
 import { FormularioPagosComponent } from './Pages/formulario-pagos/formulario-pagos.component';
 import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacion-carrito.component';
 
+//Servicios
+import { CarritoService } from './Services/carrito-service.service';
+
 
 
 
@@ -31,7 +34,8 @@ import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacio
     FormularioEnvioComponent,
     FormularioPagosComponent,
     ValidacionCarritoComponent,
-    PaisesComponent
+    PaisesComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,7 @@ import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacio
     CommonModule,
     CarouselModule
   ],
-  providers: [CurrencyPipe],
+  providers: [CurrencyPipe, CarritoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
