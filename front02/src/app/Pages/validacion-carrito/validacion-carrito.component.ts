@@ -8,9 +8,24 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ValidacionCarritoComponent implements OnInit {
   elementos: any[] = [
-    { img: 'Foto', producto: 'Aifon', precio: 500, cantidad: 2 },
-    { img: 'Foto', producto: 'RunRun', precio: 300, cantidad: 3 },
+    { img: 'Foto', producto: 'Aifon', precio: 50000, cantidad: 2 },
+    { img: 'Foto', producto: 'RunRun', precio: 300000, cantidad: 3 },
+    { img: 'Foto', producto: 'bien', precio: 130000, cantidad: 5 },
   ];
+
+  responsiveOptions = [
+    {
+      breakpoint: '768px',
+      numVisible: 3,
+      numScroll: 3
+    },
+    {
+      breakpoint: '1024px',
+      numVisible: 5,
+      numScroll: 5
+    }
+  ];
+  
 
   cuponForm!: FormGroup;
   cupon: string = '';
@@ -35,7 +50,7 @@ export class ValidacionCarritoComponent implements OnInit {
   }
 
   disminuirCantidad(dato: any) {
-    if (dato.cantidad > 0) {
+    if (dato.cantidad > 1) {
       dato.cantidad--;
     }
   }
@@ -56,4 +71,16 @@ export class ValidacionCarritoComponent implements OnInit {
     const cupon = this.cuponForm.value.cupon;
     console.log('Cupón aplicado:', cupon);
   }
+
+  calcularEnvio(): string {
+    const subtotal = this.calcularSubtotal();
+  
+    if (subtotal < 1000000) {
+      return '$ 15.000';
+    } else {
+      return 'Envío gratis';
+    }
+  }
 }
+
+
