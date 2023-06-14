@@ -267,12 +267,90 @@ div{
     width: 100%;
     border-collapse: collapse;
     color: black;
-}
-
-.Productos th,
-.Productos td {
+  }
+  
+  .Productos th,
+  .Productos td {
     padding: 8px;
     text-align: center;
-    border: 1px solid black;
+    border-bottom: 1px solid black; /* Add bottom border */
+  }
+  
+  .Productos th:first-child,
+  .Productos td:first-child {
+    border-left: none; /* Remove left border */
+  }
+  
+  .Productos th:last-child,
+  .Productos td:last-child {
+    border-right: none; /* Remove right border */
+  }
+  
+  .Productos th:not(:first-child),
+  .Productos td:not(:first-child) {
+    border-left: none; /* Remove left border for other cells */
+  }
+
+.cantidad {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #16697A;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 
+.producto-cell {
+    position: relative;
+    width: 10vh;
+  }
+  
+  .producto-img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    width: 10vh;
+  }
+  
+  .cantidad {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #16697A;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+
+  .subtotal-total {
+    display: table;
+
+  }
+  
+  .subtotal-total p {
+    display: table-cell;
+    margin: 0;
+    color: black;
+    justify-content: space-between;
+  }
+  
+  .subtotal-total .titulo {
+    display: table-cell;
+    font-weight: bold;
+    color: black;
+  }
+
+  .precio{
+    
+    text-align: right;
+
+  }
+
+  .precio-div{
+    width: 100%;
+    text-align: right;
+    margin: none;
+  }

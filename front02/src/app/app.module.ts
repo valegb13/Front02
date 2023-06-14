@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { CurrencyPipe } from '@angular/common';
+
 //Header y footer
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
@@ -35,7 +37,7 @@ import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacio
     ReactiveFormsModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

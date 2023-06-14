@@ -58,7 +58,7 @@
                   <div class="datos-nombre">
                     <div class="datos-nombre-vertical">
                       <div class="span-label">
-                        <label for="departamento">Departamento</label><span class="red">*</span>
+                        <label for="departamento">Departamento/Estado</label><span class="red">*</span>
                       </div>
                       <input class="input-mini" id="departamento" type="text" formControlName="departamento">
                       <br>
@@ -124,28 +124,36 @@
             </div>
             
           </div>
-          <pre>{{ elementos | json }}</pre>
           <table class="Productos">
-            <thead>
-              <tr>
-                <th colspan="2"><h3>Producto</h3></th>
-                <th><h3>Precio</h3></th>
-                <th><h3>Cantidad</h3></th>
-              </tr>
-            </thead>
             <tbody>
               <tr *ngFor="let dato of elementos">
-                <td>{{ dato.img }}</td>
+                <td class="producto-cell">
+                  <img class="producto-img" src="{{ dato.img }}">
+                  <span class="cantidad">{{ 'x' + dato.cantidad }}</span>
+                </td>
                 <td>{{ dato.producto }}</td>
                 <td>{{ dato.precio }}</td>
-                <td>{{ dato.cantidad }}</td>
               </tr>
             </tbody>
           </table>
+          <div class="subtotal-total">
+            <div class="precio-div">
+              <p><span class="titulo">Subtotal:</span></p>
+              <p>{{ getSubtotal() | currency }}</p>
+            </div>
+            <div>
+              <p><span class="titulo">Costo de envío:</span></p>
+              <p class="precio">{{ 15000 | currency }}</p>
+            </div>
+            <div>
+              <p><span class="titulo">Total:</span></p>
+              <p>{{ getTotal() | currency }}</p>
+            </div>
+          </div>                  
           <p class="p-hd">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.</p>
             <button class="Btn-Pagos" type="submit" [disabled]="formEnvios.invalid">Realizar pago</button>
         </div>
     
         </form>
     </div>
-    
+  

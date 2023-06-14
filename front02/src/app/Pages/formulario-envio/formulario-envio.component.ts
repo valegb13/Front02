@@ -6,33 +6,61 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './formulario-envio.component.html',
   styleUrls: ['./formulario-envio.component.css']
 })
+
 export class FormularioEnvioComponent implements OnInit {
+
   public formEnvios: FormGroup = new FormGroup({});
   
   elementos: any[] = [
-    { img: 'Foto', producto: 'Aifon', precio: 500, cantidad: 2 },
-    { img: 'Foto', producto: 'RunRun', precio: 300, cantidad: 3 },
+    { img: './assets/icons/Aifon.jpeg', producto: 'Aifon', precio: 1500000, cantidad: 2 },
+    { img: './assets/icons/RunRun.jpg', producto: 'RunRun', precio: 3000000, cantidad: 3 },
   ];
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder){
+
+  }
+  
+  
 
   ngOnInit(): void {
     this.formEnvios = this.formBuilder.group({
-      correo: ['', [Validators.required, Validators.email]],
-      nombre: ['', Validators.required],
-      apellido: ['', Validators.required],
-      pais: ['Colombia'],
-      departamento: ['', Validators.required],
-      ciudad: ['', Validators.required],
-      direccion: ['', Validators.required],
-      cedula: ['', Validators.required],
-      telefono: ['', Validators.required]
+      correo: this.formBuilder.group({
+        correo: ['', [Validators.required, Validators.email]],
+        correos_exclusivos: ['']
+      }),
+      datos: this.formBuilder.group({
+        nombre: ['', Validators.required],
+        apellido: ['', Validators.required],
+        pais: ['', Validators.required],
+        departamento: ['', Validators.required],
+        ciudad: ['', Validators.required],
+        direccion: ['', Validators.required]
+      }),
+      costo_envio: this.formBuilder.group({}),
+      facturacion: this.formBuilder.group({
+        cedula: ['', Validators.required],
+        telefono: ['', Validators.required]
+      })
     });
-
     console.log(this.elementos);
   }
 
-  send(): any {
+  getSubtotal(): number {
+    let subtotal = 0;
+    for (const dato of this.elementos) {
+      subtotal += dato.precio * dato.cantidad;
+    }
+    return subtotal;
+  }
+
+  getTotal(): number {
+    const subtotal = this.getSubtotal();
+    const envio = 15000; // Assuming the shipping price is $15,000
+    return subtotal + envio;
+  }
+
+  send(): any{
     console.log(this.formEnvios.value);
-  }  
+  }
+  
 }

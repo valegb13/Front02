@@ -14,7 +14,7 @@ import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/f
   ]
 })
 export class PaisesComponent implements OnInit, ControlValueAccessor {
-  paises: string[] = ['Argentina', 'Brasil', 'Chile', 'Colombia', 'Ecuador'];
+  paises: string[] = ['Argentina', 'Brasil', 'Chile', 'Colombia', 'Ecuador', 'Peru', 'Venezuela', 'Bolivia', 'Paraguay', 'Uruguay', 'Mexico', 'Costa Rica', 'Panama', 'Guatemala', 'Honduras', 'El Salvador', 'Nicaragua'];
   paisControl = new FormControl('Colombia');
   onChange: any = () => {};
   onTouched: any = () => {};
