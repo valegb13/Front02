@@ -112,3 +112,9 @@ hr {
   margin-top: 1px;
 }
 
+.Btn-Contactar{
+  background-color: transparent;
+  border-color: none;
+  border-style: none;
+  cursor: pointer;
+}

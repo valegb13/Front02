@@ -22,6 +22,7 @@ import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacio
 
 //Servicios
 import { CarritoService } from './Services/carrito-service.service';
+import { ContactarComponent } from './Compnents/contactar/contactar.component';
 
 
 
@@ -35,6 +36,7 @@ import { CarritoService } from './Services/carrito-service.service';
     FormularioPagosComponent,
     ValidacionCarritoComponent,
     PaisesComponent,
+    ContactarComponent,
 
   ],
   imports: [
