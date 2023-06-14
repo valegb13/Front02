@@ -2,6 +2,7 @@
   background-color: transparent;
   box-shadow: none;
   cursor: pointer;
+  border-color: transparent;
 }
 
 .example-icon {
@@ -73,3 +74,5 @@
 .right-icons a:not(:last-child) {
   margin-right: 4vh;
 }
+
+.mat-icon { font-size: 50px; }

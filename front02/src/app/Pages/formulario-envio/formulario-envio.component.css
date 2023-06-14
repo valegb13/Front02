@@ -351,6 +351,7 @@ div{
 
 .precio{
     text-align: right;
+    margin-left: 5vh;
 
 }
 
@@ -363,7 +364,7 @@ div{
 
 .TotalP{
     background-color: #ede7e3;
-    width: 100%;
+    width: 60vh;
     font-weight: bold;
     color: black;
     margin-top: 1vh;
@@ -381,3 +382,8 @@ div{
 }
 
 .text-right{text-align: right;}
+
+.titulo{
+    width: 40vh;
+    text-align: left;
+}

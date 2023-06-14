@@ -12,7 +12,7 @@ export class FormularioEnvioComponent implements OnInit {
   public formEnvios: FormGroup = new FormGroup({});
   
   elementos: any[] = [
-    { img: './assets/icons/Aifon.jpeg', producto: 'Aifon', precio: 1500000, cantidad: 2 },
+    { img: './assets/icons/Aifon.jpeg', producto: 'Aifon', precio: 1500000, cantidad: 5 },
     { img: './assets/icons/RunRun.jpg', producto: 'RunRun', precio: 3000000, cantidad: 3 },
   ];
 
