@@ -1,0 +1,278 @@
+/* Parámetros texto */
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+span{
+    color: red;
+}
+/* Fin parámetros texto */
+
+
+.Titulo{
+    color: #16697A;
+    font-weight: bold;
+}
+
+
+div{
+    border-radius: 5px;
+}
+.Cont-rec{
+    background-color: #16697A;
+    height: 7vh;
+    color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contendor Principal formulario */
+
+.Cont-Divisor{
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.Cont-Principal{
+    border-color: #ede7e3;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    width: 50vw;
+    background-color: #ede7e3;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.Cont-Segundo{
+    border-color: black;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    width: 30vw;
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 10vw;
+    padding: 5px;
+}
+
+.Cont-Correo{
+    background-color: #FFFF;
+    border-radius: 15px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column; /* quede en columna, no vertical */
+    padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
+}
+
+.Cont-datos{
+    border-radius: 15px;
+    height: 55vh;
+    display: flex;
+    flex-direction: column; /* quede en columna, no vertical */
+    padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
+}
+
+.Cont-costoenvios{
+    border-color: #ede7e3;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #FFFF;
+    padding-left: 1.5vh;
+}
+
+.Cont-costoenvios-pf{
+    background-color: #ede7e3;
+    width: 90%;
+    height: 5vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: black ;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.Cont-costoenvios-cs{
+    background-color: #96E072;
+    width: 90%;
+    height: 5vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cont-Facturacion{
+    margin: 10px;
+    border-radius: 15px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column; /* quede en columna, no vertical */
+    padding-left: 1.5vh; /* Ajustar el padding pa que no quede pegado */
+}
+
+
+
+/* AJUSTES */
+
+/* Ajustar juntar Nombre-Apellido */
+
+.datos-nombre{
+    margin-bottom: 1vh;
+    display: flex;
+    flex-direction:row;
+}
+
+.datos-nombre-vertical{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.datos-nombre-vertical:first-child {
+    margin-right: 50px; 
+}
+
+.datos-nombre-vertical a{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+
+
+
+/* Ajuste cuadro derecha (carrito de compra) */
+
+.dos{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.dosgrande{
+    width: 60%;
+}
+
+.grandedos{
+    margin: 0;
+    vertical-align:top;
+}
+
+/* Fin Ajustar juntar Nombre-Apellido */
+
+/* Ajuste tamaño letra en label */
+.label-correos{
+    font-size: 10px;
+}
+
+
+/* Pegar el cuadrito con el texto en CORREO EXCLUSIVO */
+.Ajuste-exclusivos{
+    display: flex; 
+    align-items: center;
+}
+
+
+/* AJUSTES  INPUTS*/
+
+.input-large{
+    width: 90%;
+    border-radius: 5px;
+    border-width: 0.5px;
+    height: 6vh;
+}
+
+.input-mini{
+    width: 80%;
+    border-radius: 5px;
+    border-width: 0.5px;
+    height: 5vh;
+}
+
+.input-medium{
+    width: 38%;
+    border-radius: 5px;
+    border-width: 0.5px;
+    height: 5vh;
+}
+
+.p-hd{
+    font-size: 10px;
+}
+
+.Letra-prqueña{
+    font-size: 10px;
+}
+
+
+/* AJUSTES  Botones*/
+
+
+.Btn-Carrito{
+    border-radius: 5px;
+    background-color: #ffa62b;
+    border-color: #ffa62b;
+    color: #FFFF;
+    height: 4vh;
+    width: 15vh;
+}
+
+.Btn-Pagos{
+    background-color: #16697A;
+    color: #FFFF;
+    height: 5vh;
+    border-radius: 10px;
+    width: 20vh;
+    border-color: #16697A;
+}
+
+/* Estilo para la tabla */
+.Productos {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+}
+
+.Productos th,
+.Productos td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+

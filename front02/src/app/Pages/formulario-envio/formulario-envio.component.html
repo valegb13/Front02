@@ -1,0 +1,150 @@
+<head>
+    <script src="https://kit.fontawesome.com/a5f6b8b50e.js" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <h2 class="Titulo">Finalizar compra</h2>
+    
+    <div class="Cont-rec">
+        <p>Recuerde que las entregas en la ciudad de Bucaramanga son de 1 a 2 días hábiles y 3 a 7 días hábiles a nivel nacional</p>
+    </div>
+    
+    
+    <div class="Cont-Divisor">
+      <form [formGroup]="formEnvios" (submit)="send()">
+        <div class="Cont-Principal">
+        
+                <div formGroupName="correo" class="Cont-Correo">
+                    <h3>INGRESA TUS DATOS</h3>
+                    <label for="correo">Dirección de correo electrónico: </label>
+                    <input class="input-large" id="correo" type="email" formControlName="correo">
+                    <label class="Letra-prqueña" for="correo">El número de pedido y el recibo se enviarán a esta dirección de correo electrónico.</label>
+                    <br>
+    
+                    <div class="Ajuste-exclusivos"> <!-- Para pegar -->
+                        <input id="correos_exclusivos" type="checkbox" formControlName="correos_exclusivos">
+                        <label class="label-correos" for="correos_exclusivos">Me gustaría recibir correos electrónicos exclusivos con descuentos e información de productos (opcional)</label>
+                    </div> <!-- Para pegar  -->
+                </div>
+        
+                <div formGroupName="datos" class="Cont-datos">
+                  <h3>Envío</h3>
+                  <div class="datos-nombre">
+                    <div class="datos-nombre-vertical">
+                      <div class="span-label">
+                        <label for="nombre">Nombre</label> <span class="red">*</span>
+                      </div>
+                      <input class="input-mini" id="nombre" type="text" formControlName="nombre">
+                      <br>
+                    </div>
+        
+                    <div class="datos-nombre-vertical">
+                      <div class="span-label">
+                        <label for="apellido">Apellidos</label> <span class="red">*</span>
+                      </div>
+                      
+                      <input class="input-mini" id="apellido" type="text" formControlName="apellido">
+                      <br>
+                    </div>
+                  </div>
+        
+                  <div class="span-label">
+                    <label for="pais">País</label><span class="red">*</span>
+                  </div>
+                  <input class="input-medium" id="pais" type="text" formControlName="pais">
+                  <br>
+        
+                  <div class="datos-nombre">
+                    <div class="datos-nombre-vertical">
+                      <div class="span-label">
+                        <label for="departamento">Departamento</label><span class="red">*</span>
+                      </div>
+                      <input class="input-mini" id="departamento" type="text" formControlName="departamento">
+                      <br>
+                    </div>
+        
+                    <div class="datos-nombre-vertical">
+                      <div class="span-label">
+                        <label for="ciudad">Ciudad</label><span class="red">*</span>
+                      </div>
+                      <input class="input-mini" id="ciudad" type="text" formControlName="ciudad">
+                    </div>
+                    <br>
+                  </div>
+                  <div class="span-label">
+                    <label for="direccion">Dirección</label><span class="red">*</span>
+                  </div>
+                  
+                  <input class="input-large" id="direccion" type="text" formControlName="direccion">
+                </div>
+                <div class="Cont-costoenvios" formGroupName="costo_envio">
+                  <h3>Costo de envío</h3>
+                  <div class="Cont-costoenvios-pf">
+                    <i class="fa-sharp fa-light fa-check"></i>
+                    <p>Precio fijo: </p>
+                    <p>$15.000</p>
+                  </div>
+                  <div class="Cont-costoenvios-cs">
+                    <p>Por compras superiores a $1.000.000 tienes ENVÍO GRATIS</p>
+                  </div>
+                  
+                
+                </div>
+                <br>
+                <div formGroupName="facturacion" class="Cont-Facturacion" >
+                  <div class="datos-nombre">
+                    <div class="datos-nombre-vertical">
+                      <div class="span-label">
+                        <label for="cedula">Cédula:</label><span class="red">*</span>
+                      </div>
+                      <input class="input-mini" id="cedula" type="text" formControlName="cedula">
+                    </div>
+          
+                  <div class="datos-nombre-vertical">
+                    <div class="span-label">
+                      <label for="telefono">Teléfono:</label><span class="red">*</span>
+                    </div>
+                    <input class="input-mini" id="telefono" type="text" formControlName="telefono">
+                  </div>
+                  </div>
+        
+                </div>
+                
+        </div>
+        
+        <div class="Cont-Segundo">
+          <div class="datos-nombre grandedos">
+            <div class="datos-nombre-vertical dosgrande">
+              <h3>Resumen del pedido</h3>
+            </div>
+    
+            <div class="datos-nombre-vertical dos">
+              <button class="Btn-Carrito" routerLink="/carrito">Ir al carrito</button>
+            </div>
+            
+          </div>
+          <pre>{{ elementos | json }}</pre>
+          <table class="Productos">
+            <thead>
+              <tr>
+                <th colspan="2"><h3>Producto</h3></th>
+                <th><h3>Precio</h3></th>
+                <th><h3>Cantidad</h3></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let dato of elementos">
+                <td>{{ dato.img }}</td>
+                <td>{{ dato.producto }}</td>
+                <td>{{ dato.precio }}</td>
+                <td>{{ dato.cantidad }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="p-hd">Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.</p>
+            <button class="Btn-Pagos" type="submit" [disabled]="formEnvios.invalid">Realizar pago</button>
+        </div>
+    
+        </form>
+    </div>
+    

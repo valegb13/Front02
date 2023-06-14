@@ -1,1 +1,24 @@
-<p>header works!</p>
+<header class="header">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <nav class="navigation">
+      <div class="left-icons">
+        <a routerLink="/#">
+          <img src="/assets/icons/5.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="center-container">
+        <div class="search-bar-container">
+          <input type="text" placeholder="Buscar" class="search-bar">
+          <a href ="#"><img src="/assets/icons/lupa.png" alt="Icono Busqueda" class="search-icon"></a>
+        </div>
+      </div>
+      <div class="right-icons">
+        <a routerLink="/#">
+          <img src="/assets/icons/userw.png" alt="Usuario" class="icon">
+        </a>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon matBadge="0" matBadgeColor="warn">shopping_cart</mat-icon>
+        </button>
+      </div>
+    </nav>
+  </header>  

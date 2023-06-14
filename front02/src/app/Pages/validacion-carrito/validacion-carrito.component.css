@@ -1,0 +1,163 @@
+
+
+/* Parámetros texto */
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Fin parámetros texto */
+.Titulo{
+    padding: 10px;
+    color: #16697A;
+    font-weight: bold;
+
+}
+.IconoTitulo {
+    color: #489fb5;
+  }
+
+.ContPrincipal{
+    display: flex;
+}
+.ContTabla{
+    width: 70%;
+}
+
+.Productos{
+    width: 90%;
+    text-align: center;
+    
+}
+
+.Productos th {
+    font-weight: bold;
+    }
+
+.Productos td {
+    border-bottom: 4px solid #489fb5;
+    padding: 8px;
+  }
+
+
+.Productos td:nth-child(1) {
+    width: 25%;
+    border-bottom: none;
+    }
+  
+
+.Productos td:nth-child(2) {
+    width: 30%;
+  }
+
+.Productos td:nth-child(3) {
+    width: 20%;
+  }
+
+
+.Productos td:nth-child(4) {
+      width: 5%;
+    }
+
+.Productos td:nth-child(5) {
+    width: 15%;
+    }
+
+.Productos td:nth-child(6) {
+    
+    width: 5%;
+    
+    }
+.IconoEliminar {
+    color: #ea3546;
+    font-size: 24px;
+    }
+      
+.BotonEliminar {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    }
+
+.ResumInfo {
+    width: 30%;
+    height: auto;
+    border: 5px solid black;
+    float: right;
+    margin-right: 1%;
+    border-radius: 15px;
+  }
+    
+.SubTotal {
+    display: flex;
+    background-color: #ede7e3;
+    padding: 1px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 80%;     
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    font-weight: bold;
+    justify-content: space-between;
+    }
+
+.SubTotalText {
+    margin-right: auto;
+    }
+.SubTotalVal {
+    margin-left: auto;
+    }
+.TextCupon{
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%;
+}
+.RedimirCupon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 10%;
+  }
+.RedimirCupon button {
+  padding: 10px 12px;
+  margin-left: 5%;
+  background-color: #ffa62b;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 30%;
+}
+
+.RedimirCupon input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    width: 50%;
+}

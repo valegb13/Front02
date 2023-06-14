@@ -1,0 +1,59 @@
+
+<div>
+    <h1 class="Titulo"><i class=></i>Carrito de Compras</h1>
+</div>
+
+<div class="ContPrincipal">
+    <div class="ContTabla">
+        <table class="Productos">
+            <thead>
+                <tr>
+                    <th colspan="2"><h2>Producto</h2></th>
+                    <th><h2>Precio</h2></th>
+                    <th><h2>Cantidad</h2></th>
+                    <th><h2>Total</h2></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let dato of elementos">
+                    <td>{{ dato.img }}</td>
+                    <td>{{ dato.producto }}</td>
+                    <td>{{ dato.precio }}</td>
+                    <td>
+                        <button (click)="disminuirCantidad(dato)">-</button>
+                        {{ dato.cantidad }}
+                        <button (click)="aumentarCantidad(dato)">+</button>
+                    </td>
+                    <td>{{ calcularTotalProducto(dato) }}</td>
+                    <td>
+                        <button class="BotonEliminar" (click)="eliminarElemento(dato)">
+                        <i class=></i>
+                        </button>
+                      </td>
+                      
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="ResumInfo">
+        <div class="SubTotal">
+            <h3 class="SubTotalText">Subtotal</h3>
+            <h3 class="SubTotalVal">${{calcularSubtotal()}}</h3>
+
+        </div>
+        <div class="TextCupon">
+            <p >¿Tienes un código de cúpon? Ingresalo aquí</p>
+        </div>
+        <form [formGroup]="cuponForm" (ngSubmit)="aplicarCupon()">
+            <div class="RedimirCupon">
+              <input id="cupon" type="text" placeholder="Código" formControlName="cupon">
+              <button type="submit">Redimir</button>
+            </div>
+        </form> 
+        <div class="TextCupon">
+            <p >Costo de Envío:</p>
+        </div>         
+    </div>
+</div>

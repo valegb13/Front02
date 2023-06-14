@@ -1,0 +1,114 @@
+/* Parámetros texto */
+label{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+b{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+span{
+  color: red;
+}
+
+.footer {
+  background-color: #15697D;
+  padding: 10px;    
+  left: 0;    
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+  text-align: center;
+}
+
+.line {
+  border-left: 3px solid white;
+  height: 150px;
+  margin: 0 10px;
+}
+
+hr {
+  border: none;
+  border-top: 4px solid gray;
+  margin-top: 10px;
+  width: 90%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 60px; 
+  margin-top: 10px;
+}
+
+.pagos{
+  margin-left: 60px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.image-container img {
+  max-height: 30px; 
+  margin-right: 10px;   
+}
+
+.footer-images img {
+  max-height: 40px; 
+}
+
+.table-image {
+  max-height: 80px; 
+}  
+
+.image-caption {
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.textopequeno{
+  color: white;
+  text-align: center;
+  margin-top: 1px;
+}
+

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Parámetros texto */
+
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3{
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold !important;
+    margin: 0px;
+}
+
+.resumen{
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold !important;
+    margin-left: 5%;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #16697A;
+    font-weight: bold;
+}
+
+u{
+    color: #16697A;
+}
+
+/* Fin parámetros texto */
+
+
+/* CONTENEDORES */
+
+.contPrincipal{
+    display: flex;
+    margin-top: 2%;
+}
+
+.contIzq{
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    width: 65%;
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 1%;
+    padding: 5px;
+    height: auto;
+    
+}
+
+
+.contDer{
+    border-color: black;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    width: 35%;
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 1%;
+    padding: 5px;
+    height: auto;
+    align-items: center;
+    
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .contenedor-izquierdo, .contenedor-derecho {
+    width: 48%;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #ccc;
+    margin: 1%;
+    height: auto;
+    border-radius: 8px;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .contenedor-inferior {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: 0;
+    height: auto;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 1%;
+  }
+  
+.contIdentificacion{
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 2px;
+    height: 120px;
+    display: inline-block;
+    width: 47%;
+    padding-bottom: 3%;
+}
+
+
+.contEnvio{
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 2px;
+    height: 120px;
+    display: inline-block;
+    width: 47%;
+    padding-bottom: 3%;
+}
+
+.contResumenPedido{
+
+    display: flex;
+    margin: 0;
+    vertical-align:top;
+
+}
+
+.Total{
+
+    display: flex;
+    margin: 0;
+    vertical-align:top;
+    background-color:#ccc;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+.contPago{
+    margin-top: 1%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    
+}
+
+/* Edicion de Texto y Titulos*/ 
+
+.titResumen{
+    width: 77%;
+    display: inline-block;
+}
+
+.tablaResumen{
+    width: 100%;
+}
+
+.botonEditar{
+    display: inline-block;
+    background-color: #ffa62b;
+    border: 1px black;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.botonComprar{
+    display: inline-block;
+    background-color:#16697A;
+    border: 1px black;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+
+.contBoton{
+    width: 40%;
+    justify-content: center;
+    align-items: left;
+    margin-top: 1%;
+    margin-right: 0;
+    display: flex;
+}
+
+
+
+.contBotonComprar{
+    width: 80%;
+    align-items: center;
+    margin-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2%;
+    height: auto;
+    display: inline-block;
+}
+
+.contTitulo{
+    width: 100%;
+    margin-top: 1%;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+
+
+.contSubtotal{
+    width: 70%;
+    margin-top: 1%;
+}
+
+.precioSubtotal{
+    display: flex;
+    width: 45%;
+    margin-top: 1%;
+    justify-content: right;
+    padding-right: 2%;
+}
+
+.Envio{
+    width: 80%;
+    margin-top: 0;
+}
+
+.Productos {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+}
+
+.entrega{
+
+    display: flex;
+    margin: 0;
+    vertical-align:top;
+    background-color: #96E072;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+    align-items: end;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    justify-content: center;
+
+}
+
+.contPago {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de ancho flexible */
+    grid-template-columns: 30% 70%; /* Primera columna 30% y segunda columna 70% */
+    grid-gap: 10px; /* Espacio entre los elementos */
+    width: 95%;
+    padding: 2%;
+    border:none;
+  }
+  
+  .columna-1 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); /* Cuatro filas de alto flexible */
+
+    width: 100%;
+  }
+  
+  .contMetodo {
+    padding: 10px;
+    background-color: #489EB5;
+    margin: 2px;
+    height: auto;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+
+  
+  .columna-2 {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: stretch; /* Alinear al estiramiento vertical */
+  }
+  
+  .contVistaPago {
+    background-color: white;
+    border-radius: 5px;
+
+    flex: 1; /* Ocupar todo el espacio vertical */
+    padding: 10px;
+  }
