@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { CurrencyPipe } from '@angular/common';
+
 //Header y footer
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { PaisesComponent } from './Components/paises/paises.component';
 
 //Componentes principales
 import { FormularioEnvioComponent } from './Pages/formulario-envio/formulario-envio.component';
@@ -27,7 +30,7 @@ import { CarouselModule } from 'primeng/carousel';
     FormularioEnvioComponent,
     FormularioPagosComponent,
     ValidacionCarritoComponent,
-    
+    PaisesComponent
   ],
   imports: [
     BrowserModule,
@@ -35,10 +38,9 @@ import { CarouselModule } from 'primeng/carousel';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MatIconModule,
-    CommonModule,
     CarouselModule
   ],
-  providers: [],
+  providers: [CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
