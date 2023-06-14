@@ -25,6 +25,7 @@ p{
 
 /* Fin parámetros texto */
 .Titulo{
+    margin-left: 2%;
     padding: 20px;
     color: #16697A;
     font-weight: bold;
@@ -104,6 +105,35 @@ p{
     padding: 0;
     }
 
+.titulo_Carrusel {
+    position: relative;
+    text-align: center;
+    margin: 5%;
+  }
+  
+  .titulo_Carrusel::before,
+  .titulo_Carrusel::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 50%;
+    background-color: black;
+    border: 2px solid black;
+  }
+  
+  .titulo_Carrusel::before {
+    left: 0;
+    width: 35%;
+    transform: translateX(10%);
+  }
+  
+  .titulo_Carrusel::after {
+    right: 0;
+    width: 35%;
+    transform: translateX(-10%);
+  }
+
 .ResumInfo {
     width: 30%;
     height: auto;
@@ -177,3 +207,58 @@ p{
     font-size: 20px;
     width: 50%;
 }
+.TextEnvio{
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%;
+  }
+  
+
+  
+  .envio-cost {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .envio-gratis {
+    display: flex;
+    background-color: green;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 80%;     
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    font-weight: bold;
+
+    justify-content: space-between;
+  }
+.Negrita{
+    font-weight: bold;
+}
+
+.Total {
+    display: flex;
+    background-color: #ede7e3;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 80%;     
+    height: auto;
+    margin-top: 30%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    font-weight: bold;
+
+    justify-content: space-between;
+    }
+
+.TotalText {
+    margin-right: auto;
+    }
+.TotalVal {
+    margin-left: auto;
+    }
