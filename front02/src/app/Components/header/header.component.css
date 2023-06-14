@@ -1,47 +1,32 @@
-.button {
-  background-color: transparent;
-  box-shadow: none;
-  cursor: pointer;
-  border-color: transparent;
-}
-
-.example-icon {
-  width: 48px;
-  height: 48px;
-}
-
-.shopping-cart-icon {
-  font-size: 24px;
-}
-
 .header {
   background-color: #15697D;
-  padding: 10px;
   display: flex;
+  align-items: center;
   height: 10vh;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .navigation {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  justify-content: space-between;
 }
 
-.icon {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
+.left-icons,
+.center-container,
+.right-icons {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
-  margin-right: 10px;
-}
-
-.center-container {
-  flex-grow: 1;
-  display: flex;
+  margin-top: 2vh;
+  width: 30vh;
+  height: auto;
+  margin-left: 5vh;
 }
 
 .search-bar-container {
@@ -51,10 +36,11 @@
 }
 
 .search-bar {
-  width: 1000px;
+  width: 50vh;
   height: 32px;
   padding: 5px;
   border-radius: 16px;
+  border: none; /* Elimina el borde de la barra de búsqueda */
 }
 
 .search-icon {
@@ -62,17 +48,34 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.example-icon {
+  width: 2vh;
+  height: 2vh;
+}
+
+.shopping-cart-icon,
+.mat-icon {
+  font-size: 28px;
+  color: white;
 }
 
 .right-icons {
   display: flex;
   align-items: center;
+  height: 100%; /* Ajusta la altura al 100% del contenedor */
+  margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
 }
 
-.right-icons a:not(:last-child) {
-  margin-right: 4vh;
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 100%; /* Ajusta la altura al 100% del contenedor */
+  width: 48px; /* Ajusta el ancho según tus necesidades */
 }
-
-.mat-icon { font-size: 50px; }
