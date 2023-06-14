@@ -45,6 +45,8 @@ u{
     color: #16697A;
 }
 
+
+
 /* Fin parámetros texto */
 
 
@@ -52,7 +54,9 @@ u{
 
 .contPrincipal{
     display: flex;
-    margin-top: 2%;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .contIzq{
