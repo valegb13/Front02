@@ -8,16 +8,24 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ValidacionCarritoComponent implements OnInit {
   elementos: any[] = [
-    { img: 'Foto', producto: 'Aifon', precio: 50000, cantidad: 2 },
-    { img: 'Foto', producto: 'RunRun', precio: 300000, cantidad: 3 },
-    { img: 'Foto', producto: 'bien', precio: 130000, cantidad: 5 },
+    { img: './assets/icons/RunRun.jpg', producto: 'Patineta Electrica', precio: 300000, cantidad: 3 },
+    { img: './assets/icons/Aifon.jpeg', producto: 'Apple Iphone 14 ', precio: 130000, cantidad: 5 },
+    { img: './assets/icons/Aifon.jpeg', producto: 'bien', precio: 70000, cantidad: 2 },
+  ];
+
+  carrusel: any[] = [
+    { img: './assets/icons/RunRun.jpg', producto: 'Patineta Electrica', precio: 300000, cantidad: 3 },
+    { img: './assets/icons/Aifon.jpeg', producto: 'Apple Iphone 14 ', precio: 130000, cantidad: 5 },
+    { img: './assets/icons/Aifon.jpeg', producto: 'bien', precio: 70000, cantidad: 2 },
+    { img: './assets/icons/RunRun.jpg', producto: 'Patineta Electrica', precio: 300000, cantidad: 3 },
+    { img: './assets/icons/Aifon.jpeg', producto: 'bien', precio: 70000, cantidad: 2 },
   ];
 
   responsiveOptions = [
     {
       breakpoint: '768px',
-      numVisible: 3,
-      numScroll: 3
+      numVisible: 4,
+      numScroll: 4
     },
     {
       breakpoint: '1024px',

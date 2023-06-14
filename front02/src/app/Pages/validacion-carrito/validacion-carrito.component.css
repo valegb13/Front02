@@ -54,6 +54,14 @@ p{
     
 }
 
+.img_Producto{
+  width: 50%;
+}
+
+.img_Carrusel{
+  width: 40%;
+}
+
 .Productos th {
     font-weight: bold;
     }
@@ -133,7 +141,20 @@ p{
     width: 35%;
     transform: translateX(-10%);
   }
+.product-card{
+  text-align: center;
+}
+.text_Carrusel{
+  background-color: #ede7e3;
+  width: 90%;
+  border-radius: 5px;
+  padding: 1%;
+  
+}
 
+.precio_Carrusel{
+  color: #ea3546;
+}
 .ResumInfo {
     width: 30%;
     height: auto;
@@ -222,7 +243,7 @@ p{
   
   .envio-gratis {
     display: flex;
-    background-color: green;
+    background-color: #96E072;
     padding-left: 2%;
     padding-right: 2%;
     width: 80%;     
@@ -247,7 +268,7 @@ p{
     width: 80%;     
     height: auto;
     margin-top: 30%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -262,3 +283,16 @@ p{
 .TotalVal {
     margin-left: auto;
     }
+  
+.botonFinalizarCompra{
+  background-color:#16697A;
+  border: 1px black;
+  padding: 15px 12px;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 30px;
+  width: 80%;
+}
