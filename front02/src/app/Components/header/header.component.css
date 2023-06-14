@@ -18,6 +18,7 @@
   padding: 10px;
   display: flex;
   height: 10vh;
+  margin: 0;
 }
 
 .navigation {
@@ -29,7 +30,8 @@
 .icon {
   width: 60px;
   height: 60px;
-  margin-right: 10px;
+  color: white;
+  background-color: white;
 }
 
 .logo {
@@ -44,6 +46,7 @@
   width: 100%;
   text-align: right;
   align-items: right;
+  padding-left: 20%;
 }
 
 .search-bar-container {
@@ -75,6 +78,21 @@
   align-items: center;
 }
 
-.right-icons a:not(:last-child) {
-  margin-right: 4vh;
+
+.material-icons{
+  color: white;
+  font-size: 45px;
+  margin-right: 2%;
+}
+
+a{
+  margin: 1px;
+}
+
+.left-icons{
+  margin-left: 2%;
+}
+
+.icon-car{
+  padding-right: 5%;
 }
