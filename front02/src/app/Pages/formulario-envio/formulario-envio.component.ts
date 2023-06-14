@@ -55,7 +55,7 @@ export class FormularioEnvioComponent implements OnInit {
 
   getTotal(): number {
     const subtotal = this.getSubtotal();
-    const envio = 15000; // Assuming the shipping price is $15,000
+    const envio = 15000;
     return subtotal + envio;
   }
 

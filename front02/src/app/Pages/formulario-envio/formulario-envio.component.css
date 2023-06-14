@@ -29,6 +29,9 @@ span{
 }
 /* Fin parámetros texto */
 
+.Padding{
+ padding: 5vh;
+}
 
 .Titulo{
     color: #16697A;
@@ -251,6 +254,7 @@ div{
     color: #FFFF;
     height: 4vh;
     width: 15vh;
+    cursor: pointer;
 }
 
 .Btn-Pagos{
@@ -258,8 +262,10 @@ div{
     color: #FFFF;
     height: 5vh;
     border-radius: 10px;
-    width: 20vh;
+    width: 40vh;
+    font-size: 16px;
     border-color: #16697A;
+    cursor: pointer;
 }
 
 /* Estilo para la tabla */
@@ -267,29 +273,28 @@ div{
     width: 100%;
     border-collapse: collapse;
     color: black;
-  }
-  
-  .Productos th,
-  .Productos td {
+}
+
+.Productos th,
+.Productos td {
     padding: 8px;
     text-align: center;
     border-bottom: 1px solid black; /* Add bottom border */
-  }
-  
-  .Productos th:first-child,
-  .Productos td:first-child {
+}
+
+.Productos th:first-child,
+.Productos td:first-child {
     border-left: none; /* Remove left border */
-  }
-  
-  .Productos th:last-child,
-  .Productos td:last-child {
+}
+.Productos th:last-child,
+.Productos td:last-child {
     border-right: none; /* Remove right border */
-  }
-  
-  .Productos th:not(:first-child),
-  .Productos td:not(:first-child) {
+}
+
+.Productos th:not(:first-child),
+.Productos td:not(:first-child) {
     border-left: none; /* Remove left border for other cells */
-  }
+}
 
 .cantidad {
     position: absolute;
@@ -305,16 +310,16 @@ div{
 .producto-cell {
     position: relative;
     width: 10vh;
-  }
-  
-  .producto-img {
+}
+
+.producto-img {
     position: relative;
     display: block;
     max-width: 100%;
     width: 10vh;
-  }
-  
-  .cantidad {
+}
+
+.cantidad {
     position: absolute;
     top: 0;
     right: 0;
@@ -323,34 +328,56 @@ div{
     font-size: 12px;
     padding: 2px 5px;
     border-radius: 5px;
-  }
+}
 
-  .subtotal-total {
+.subtotal-total {
     display: table;
+    width: 99%;
+    color: black;
 
-  }
-  
-  .subtotal-total p {
+}
+
+.subtotal-total p {
     display: table-cell;
     margin: 0;
     color: black;
     justify-content: space-between;
-  }
-  
-  .subtotal-total .titulo {
-    display: table-cell;
-    font-weight: bold;
-    color: black;
-  }
+}
 
-  .precio{
-    
+.subtotal-total .titulo {
+    display: table-cell;
+    color: black;
+}
+
+.precio{
     text-align: right;
 
-  }
+}
 
-  .precio-div{
+.precio-div{
     width: 100%;
     text-align: right;
     margin: none;
-  }
+    margin-top: 1vh;
+}
+
+.TotalP{
+    background-color: #ede7e3;
+    width: 100%;
+    font-weight: bold;
+    color: black;
+    margin-top: 1vh;
+}
+
+.costo-envio{
+    margin-top: 1vh;
+    text-align: right;
+}
+
+.center-btn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text-right{text-align: right;}
