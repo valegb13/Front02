@@ -1,27 +1,47 @@
+@media (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    .Cont-Divisor {
+      flex-direction: column;
+    }
+    
+    /* Agrega más estilos para pantallas pequeñas */
+  }
+  
+  @media (max-width: 480px) {
+    /* Estilos para pantallas de hasta 480px de ancho */
+    .Cont-Principal {
+      width: 100%;
+    }
+    
+    /* Agrega más estilos para pantallas aún más pequeñas */
+  }
+  
+
+
 /* Parámetros texto */
 label{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 2.5vh;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    font-size: 4px;
 }
 
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 4vh;
 }
 
 h3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 3vh;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 3vh;
 }
 
 span{
@@ -218,7 +238,7 @@ div{
     width: 90%;
     border-radius: 5px;
     border-width: 0.5px;
-    height: 6vh;
+    height: 20%;
 }
 
 .input-mini{
@@ -364,7 +384,7 @@ div{
 
 .TotalP{
     background-color: #ede7e3;
-    width: 60vh;
+    width: 45vh;
     font-weight: bold;
     color: black;
     margin-top: 1vh;
@@ -372,7 +392,6 @@ div{
 
 .costo-envio{
     margin-top: 1vh;
-    text-align: right;
 }
 
 .center-btn{
@@ -381,9 +400,11 @@ div{
     justify-content: center;
 }
 
-.text-right{text-align: right;}
+.text-right{
+    display: inline-block;
+}
 
 .titulo{
-    width: 40vh;
+    width: 25vh;
     text-align: left;
 }

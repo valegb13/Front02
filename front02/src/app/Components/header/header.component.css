@@ -37,10 +37,10 @@
 
 .search-bar {
   width: 50vh;
-  height: 32px;
+  height: 5vh;
   padding: 5px;
   border-radius: 16px;
-  border: none; /* Elimina el borde de la barra de búsqueda */
+  border: none;
 }
 
 .search-icon {
@@ -48,8 +48,8 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
+  width: 5vh;
+  height: 5vh;
   cursor: pointer;
 }
 
@@ -60,15 +60,15 @@
 
 .shopping-cart-icon,
 .mat-icon {
-  font-size: 28px;
+  font-size: 4vh;
   color: white;
 }
 
 .right-icons {
   display: flex;
   align-items: center;
-  height: 100%; /* Ajusta la altura al 100% del contenedor */
-  margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
+  height: 100%;
+  margin-left: 10px;
 }
 
 .button {
@@ -77,5 +77,5 @@
   cursor: pointer;
   outline: none;
   height: 100%; /* Ajusta la altura al 100% del contenedor */
-  width: 48px; /* Ajusta el ancho según tus necesidades */
+  width: 5vh; /* Ajusta el ancho según tus necesidades */
 }
