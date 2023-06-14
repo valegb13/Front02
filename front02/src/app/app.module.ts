@@ -10,11 +10,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 //Header y footer
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { PaisesComponent } from './Components/paises/paises.component';
 
 //Componentes principales
 import { FormularioEnvioComponent } from './Pages/formulario-envio/formulario-envio.component';
 import { FormularioPagosComponent } from './Pages/formulario-pagos/formulario-pagos.component';
 import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacion-carrito.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacio
     FooterComponent,
     FormularioEnvioComponent,
     FormularioPagosComponent,
-    ValidacionCarritoComponent
+    ValidacionCarritoComponent,
+    PaisesComponent
   ],
   imports: [
     BrowserModule,
