@@ -58,8 +58,35 @@
               <button type="submit">Redimir</button>
             </div>
         </form> 
-        <div class="TextCupon">
-            <p >Costo de Envío:</p>
-        </div>         
+
+        <div class="TextEnvio">
+            
+            <div class="envio-container">
+                
+                <p><span *ngIf="calcularEnvio() !== 'Envío gratis'" class="envio-cost">Costo de Envío:{{ calcularEnvio() }}</span></p>
+            </div>
+            <span *ngIf="calcularEnvio() === 'Envío gratis'" ><p>Costo de Envío:</p><div class="envio-gratis"><p class="Negrita">¡Felicidades!</p><p>Ya tienes</p> <p class="Negrita">ENVÍO GRATIS</p></div></span>
+            
+        </div>  
+        <div class="Total">
+            <h3 class="TotalText">Total</h3>
+            <h3 class="TotalVal">${{calcularSubtotal()}}</h3>
+
+        </div>       
     </div>
 </div>
+
+<div>
+    <h2 class="titulo_Carrusel">Te podría interesar</h2>
+    <p-carousel [value]="elementos" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" autoPlayInterval="3000">
+      <ng-template let-elemento pTemplate="item">
+        <div class="product-card">
+          <img [src]="elemento.img" alt="Product Image" />
+          <h3>{{ elemento.producto }}</h3>
+          <p>Precio: {{ elemento.precio }}</p>
+          <p>Cantidad: {{ elemento.cantidad }}</p>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+  

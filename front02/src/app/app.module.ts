@@ -16,6 +16,9 @@ import { FormularioEnvioComponent } from './Pages/formulario-envio/formulario-en
 import { FormularioPagosComponent } from './Pages/formulario-pagos/formulario-pagos.component';
 import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacion-carrito.component';
 
+import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'primeng/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +26,17 @@ import { ValidacionCarritoComponent } from './Pages/validacion-carrito/validacio
     FooterComponent,
     FormularioEnvioComponent,
     FormularioPagosComponent,
-    ValidacionCarritoComponent
+    ValidacionCarritoComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    MatIconModule
+    MatIconModule,
+    CommonModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
