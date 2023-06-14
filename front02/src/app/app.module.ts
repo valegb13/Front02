@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { CurrencyPipe } from '@angular/common';
 
@@ -46,7 +47,8 @@ import { ContactarComponent } from './Components/contactar/contactar.component';
     ReactiveFormsModule,
     MatIconModule,
     CommonModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule
   ],
   providers: [CurrencyPipe, CarritoService],
   bootstrap: [AppComponent]
