@@ -39,6 +39,7 @@ p{
     font-size: 36px;
     color: #16697A;
     font-weight: bold;
+    margin-left: 3%;
 }
 
 u{
@@ -119,6 +120,7 @@ u{
     border-radius: 8px;
     padding: 5px;
     margin: 1%;
+    padding-top: 5%;
   }
   
 .contIdentificacion{
