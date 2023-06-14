@@ -67,7 +67,7 @@ p{
     }
 
 .Productos td {
-    border-bottom: 4px solid #489fb5;
+    border-bottom: 6px solid #489fb5;
     padding: 8px;
   }
 
@@ -100,6 +100,17 @@ p{
     width: 5%;
     
     }
+
+.Boton_Cantidad{
+  border: none;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 20%;
+  height: 30px;
+  font-size: 20px;
+  
+  border-radius: 5px;
+}
 .IconoEliminar {
     color: #ea3546;
     font-size: 25px;
@@ -107,18 +118,24 @@ p{
       
 .BotonEliminar {
     width: 40px;
-    height: 40px;
+    height: 40p20x;
     background-color: transparent;
     border: none;
     padding: 0;
     }
 
+.cont_Carrusel{
+  padding: 2%;
+  border: none;
+}
 .titulo_Carrusel {
     position: relative;
     text-align: center;
     margin: 5%;
   }
-  
+.Carrusel_total{
+  background-color: transparent;
+}
   .titulo_Carrusel::before,
   .titulo_Carrusel::after {
     content: "";
@@ -267,7 +284,7 @@ p{
     padding-right: 2%;
     width: 80%;     
     height: auto;
-    margin-top: 30%;
+    margin-top: 10%;
     margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;

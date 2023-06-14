@@ -22,14 +22,15 @@
             <tbody>
                 <tr *ngFor="let dato of elementos">
                     <td><img class="img_Producto" src="{{ dato.img }}"></td>
-                    <td>{{ dato.producto }}</td>
-                    <td>{{ dato.precio | currency}}</td>
-                    <td>
-                        <button (click)="disminuirCantidad(dato)">-</button>
+                    <td><p>{{ dato.producto }}</p></td>
+                    <td><p>{{ dato.precio | currency}}</p></td>
+                    <td><p>
+                        <button class="Boton_Cantidad" (click)="disminuirCantidad(dato)">-</button>
                         {{ dato.cantidad }}
-                        <button (click)="aumentarCantidad(dato)">+</button>
+                        <button class="Boton_Cantidad" (click)="aumentarCantidad(dato)">+</button>
+                    </p>
                     </td>
-                    <td>{{ calcularTotalProducto(dato) | currency }}</td>
+                    <td><h3>{{ calcularTotalProducto(dato) | currency }}</h3></td>
                     <td>
                         <button class="BotonEliminar" (click)="eliminarElemento(dato)">
                             <mat-icon class="IconoEliminar"><span class="material-symbols-outlined">
@@ -65,7 +66,7 @@
                 
                 <p><span *ngIf="calcularEnvio() !== 'Envío gratis'" class="envio-cost">Costo de Envío:{{ calcularEnvio() }}</span></p>
             </div>
-            <span *ngIf="calcularEnvio() === 'Envío gratis'" ><p>Costo de Envío:</p><div class="envio-gratis"><p class="Negrita">¡Felicidades!</p><p>Ya tienes</p> <p class="Negrita">ENVÍO GRATIS</p></div></span>
+            <span *ngIf="calcularEnvio() === 'Envío gratis'" ><p>Costo de Envío:</p><div class="envio-gratis"><p>¡Felicidades! Ya tienes ENVÍO GRATIS</p></div></span>
             
         </div>  
         <div class="Total">
@@ -79,9 +80,9 @@
     </div>
 </div>
 
-<div>
+<div class="cont_Carrusel">
     <h2 class="titulo_Carrusel">Te podría interesar</h2>
-    <p-carousel [value]="carrusel" [numVisible]="5" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" autoPlayInterval="3000">
+    <p-carousel class="Carrusel_total" [value]="carrusel" [numVisible]="4" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" autoPlayInterval="4000">
       <ng-template let-elemento pTemplate="item">
         <div class="product-card">
           <img class="img_Carrusel" [src]="elemento.img" alt="Product Image" />
