@@ -21,15 +21,15 @@
             </thead>
             <tbody>
                 <tr *ngFor="let dato of elementos">
-                    <td>{{ dato.img }}</td>
+                    <td><img class="img_Producto" src="{{ dato.img }}"></td>
                     <td>{{ dato.producto }}</td>
-                    <td>{{ dato.precio }}</td>
+                    <td>{{ dato.precio | currency}}</td>
                     <td>
                         <button (click)="disminuirCantidad(dato)">-</button>
                         {{ dato.cantidad }}
                         <button (click)="aumentarCantidad(dato)">+</button>
                     </td>
-                    <td>{{ calcularTotalProducto(dato) }}</td>
+                    <td>{{ calcularTotalProducto(dato) | currency }}</td>
                     <td>
                         <button class="BotonEliminar" (click)="eliminarElemento(dato)">
                             <mat-icon class="IconoEliminar"><span class="material-symbols-outlined">
@@ -46,7 +46,7 @@
     <div class="ResumInfo">
         <div class="SubTotal">
             <h3 class="SubTotalText">Subtotal</h3>
-            <h3 class="SubTotalVal">${{calcularSubtotal()}}</h3>
+            <h3 class="SubTotalVal">{{calcularSubtotal() | currency}}</h3>
 
         </div>
         <div class="TextCupon">
@@ -70,7 +70,7 @@
         </div>  
         <div class="Total">
             <h3 class="TotalText">Total</h3>
-            <h3 class="TotalVal">${{calcularSubtotal()}}</h3>
+            <h3 class="TotalVal">{{calcularSubtotal() | currency}}</h3>
 
         </div>       
         <div>
@@ -81,13 +81,14 @@
 
 <div>
     <h2 class="titulo_Carrusel">Te podría interesar</h2>
-    <p-carousel [value]="elementos" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" autoPlayInterval="3000">
+    <p-carousel [value]="carrusel" [numVisible]="5" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" autoPlayInterval="3000">
       <ng-template let-elemento pTemplate="item">
         <div class="product-card">
-          <img [src]="elemento.img" alt="Product Image" />
+          <img class="img_Carrusel" [src]="elemento.img" alt="Product Image" />
+          <div class="text_Carrusel">
           <h3>{{ elemento.producto }}</h3>
-          <p>Precio: {{ elemento.precio }}</p>
-          <p>Cantidad: {{ elemento.cantidad }}</p>
+          <h2 class="precio_Carrusel">{{ elemento.precio | currency }}</h2>
+          </div>
         </div>
       </ng-template>
     </p-carousel>
