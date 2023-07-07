@@ -16,9 +16,11 @@
       <a class="icon-car">
         <i routerLink="/carrito" class="material-icons dp48">shopping_cart</i>
       </a>
-      <a href="#" class="icon-user">
-        <i class="material-icons dp48">account_circle </i>
+      <a href="#" class="icon-user" (click)="showLoginModal()">
+        <i class="material-icons dp48">account_circle</i>
       </a>
     </div>
   </nav>
 </header>
+
+<app-login *ngIf="loginModalVisible" (closeModal)="hideLoginModal()"></app-login>

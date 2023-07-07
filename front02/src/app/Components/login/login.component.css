@@ -1,0 +1,91 @@
+/* Parámetros texto */
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vh;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4px;
+    
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vh;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vh;
+    margin: 0;
+    
+}
+
+span{
+    color: red;
+}
+/* Fin parámetros texto */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  min-height: 100vh; /* Asegurar que ocupe toda la altura de la ventana */
+  background-color: #f2f2f2; /* Color de fondo del cuerpo */
+}
+
+.login-modal {
+    padding: 1vh;
+    color: #f2f2f2;
+    background-color: #15697D;
+    width: 50vh;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.Separador-texto{
+    margin: 1vh;
+    margin-bottom: 3vh;
+}
+
+form{
+    margin: 1vh;
+}
+
+input{
+    height: 4vh;
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+}
+
+.label-dos{
+    margin-top: 4vh;
+}
+.Div-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+button{
+    height: 6vh;
+    border-radius: 10px;
+    background-color: #ffa62b;
+    color: #f2f2f2;
+    width: 8vh;
+    border-style:none ;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
