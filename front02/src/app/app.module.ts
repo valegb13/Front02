@@ -27,7 +27,6 @@ import { ContactarComponent } from './Components/contactar/contactar.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +37,6 @@ import { ContactarComponent } from './Components/contactar/contactar.component';
     ValidacionCarritoComponent,
     PaisesComponent,
     ContactarComponent,
-
   ],
   imports: [
     BrowserModule,

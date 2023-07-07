@@ -1,46 +1,67 @@
+.button {
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.example-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.shopping-cart-icon {
+  font-size: 24px;
+}
+
 .header {
   background-color: #15697D;
-  display: flex;
-  align-items: center;
-  height: 10vh;
-  width: 100%;
   padding: 10px;
-  box-sizing: border-box;
+  display: flex;
+  height: 10vh;
+  margin: 0;
 }
 
 .navigation {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  justify-content: space-between;
 }
 
-.left-icons,
-.center-container,
-.right-icons {
-  display: flex;
-  align-items: center;
+.icon {
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: white;
 }
 
 .logo {
-  margin-top: 2vh;
-  width: 30vh;
-  height: auto;
-  margin-left: 5vh;
+  width: 200px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+.center-container {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  text-align: right;
+  align-items: right;
+  padding-left: 20%;
 }
 
 .search-bar-container {
   position: relative;
   display: flex;
-  align-items: center;
+  width: 100%;
+  margin-right: 2%;
 }
 
 .search-bar {
-  width: 50vh;
-  height: 5vh;
+  width: 100%;
+  height: 32px;
   padding: 5px;
-  border-radius: 16px;
-  border: none;
+  border-radius: 15px;
+  border-color: black;
 }
 
 .search-icon {
@@ -48,34 +69,31 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 5vh;
-  height: 5vh;
-  cursor: pointer;
-}
-
-.example-icon {
-  width: 2vh;
-  height: 2vh;
-}
-
-.shopping-cart-icon,
-.mat-icon {
-  font-size: 4vh;
-  color: white;
+  width: 30px;
+  height: 30px;
 }
 
 .right-icons {
   display: flex;
   align-items: center;
-  height: 100%;
-  margin-left: 10px;
 }
 
-.button {
-  background-color: transparent;
-  border: none;
+
+.material-icons{
+  color: white;
+  font-size: 45px;
+  margin-right: 2%;
+}
+
+a{
+  margin: 1px;
+}
+
+.left-icons{
+  margin-left: 2%;
+}
+
+.icon-car{
+  padding-right: 5%;
   cursor: pointer;
-  outline: none;
-  height: 100%; /* Ajusta la altura al 100% del contenedor */
-  width: 5vh; /* Ajusta el ancho según tus necesidades */
 }

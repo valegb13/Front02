@@ -8,8 +8,12 @@
       <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
     </div>
     <div>
+      <label for="message">Asunto:</label>
+      <textarea class="Asunto" id="message" name="message" [(ngModel)]="formData.message" required></textarea>
+    </div>
+    <div>
       <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" [(ngModel)]="formData.message" required></textarea>
+      <textarea class="Mensaje" id="message" name="message" [(ngModel)]="formData.message" required></textarea>
     </div>
     <button type="submit">Enviar</button>
   </form>

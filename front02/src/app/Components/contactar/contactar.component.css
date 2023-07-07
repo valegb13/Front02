@@ -67,3 +67,11 @@ form {
   button[type="submit"]:hover {
     background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
   }
+
+.Asunto{
+    height: 3vh;
+}
+
+.Mensaje{
+    height: 6vh;
+}
